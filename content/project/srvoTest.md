@@ -1,27 +1,27 @@
----
-author: "Robert Hovious"
++++
+author = "Robert Hovious"
 
-title: "Servo Testing/Control Board"
-description: "Servo Positional Control Using Pot and Display"
-link: "https://rhovious.github.io/project1/"
-tags: [
+title = "Servo Testing/Control Board"
+description = "Servo Positional Control Using Pot and Display"
+link = "https://rhovious.github.io/project1/"
+tags = [
     "servo",
     "arduino",
     "c",
 ]# 
-categories: [
+categories = [
     "projects",
     
 ]
 
-date: 2022-01-10
-weight: 5
-draft: false
-type: "projects"
+date = 2022-01-09
+weight = 5
+draft = false
+type = "projects"
 
----
++++
 
-Building a simple project that will allow moving of a 180* servo via a potentometer and 1306 screen.
+Building a simple board that will allow moving of a 180* servo via a potentometer and 1306 screen.
 
 ## About
 This project serves the purpose of building a small servo control device. This device allows connection of a standard 180* rotation servo. The angle of the servois adjusted using the potentometer. The active angle of the servo is displayed on the connected screen

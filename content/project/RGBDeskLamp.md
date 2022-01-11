@@ -1,25 +1,25 @@
----
-author: "Robert Hovious"
++++
+author =  "Robert Hovious"
 
-title: "Desktop RGB Lamp"
-description: "Potentometer RGB controlled desk lamp using neopixels"
-link: "https://rhovious.github.io/project2/"
-tags: [
+title =  "Desktop RGB Lamp"
+description =  "Potentometer RGB controlled desk lamp using neopixels"
+link =  "https://rhovious.github.io/project2/"
+tags =  [
     "servo",
     "arduino",
     "c",
 ]# 
-categories: [
+categories =  [
     "projects",
     
 ]
 
-date: 2022-01-10
-weight: 5
-draft: false
-type: "projects"
+date =  2021-12-25
+weight =  5
+draft =  true
+type =  "projects"
 
----
++++
 
 # Desktop RGB Lamp
 ## Building a simple project that will allow moving of a 180* servo via a potentometer and 1306 screen.

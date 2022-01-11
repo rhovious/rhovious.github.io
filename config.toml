@@ -8,7 +8,7 @@ enableRobotsTXT = false
 enableGitInfo   = false
 enableEmoji     = true
 enableMissingTranslationPlaceholders = false
-disableRSS     = false
+disableRSS     = true
 disableSitemap = false
 disable404     = false
 disableHugoGeneratorInject = false
@@ -73,7 +73,7 @@ disableHugoGeneratorInject = false
   # Integrate Javascript files or stylesheets by adding the url to the external assets or by
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
   #
-  customCSS = []
+  customCSS = ["/css/styles.css"]
   customJS  = []
 
   # Toggle this option need to rebuild SCSS, requires extended version of Hugo
@@ -85,11 +85,11 @@ disableHugoGeneratorInject = false
   #
   [params.footer]
     trademark = true
-    rss = true
-    copyright = true
-    author = true
+    rss = false
+    copyright = false
+    author = false
 
-    topText = ["blah"]
+    topText = []
     bottomText = [
       "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
       "Made with <a href=\"https://github.com/rhazdon/hugo-theme-hello-friend-ng\">&#10084;</a>"
@@ -109,7 +109,7 @@ disableHugoGeneratorInject = false
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
     # Set to a valid CSS color to change the cursor in the logo.
-    # logoCursorColor    = "#67a2c9"
+     logoCursorColor    = "#EC6E3A"
     # Set to a valid CSS time value to change the animation duration, "0s" to disable.
     # logoCursorAnimate  = "2s"
 
@@ -132,9 +132,9 @@ disableHugoGeneratorInject = false
   #   maxWidth = "50px"
 
   # Social icons
-  [[params.social]]
-    name = "twitter"
-    url  = "https://twitter.com/"
+#  [[params.social]]
+#    name = "twitter"
+ #   url  = "https://twitter.com/"
 
  # [[params.social]]
  #   name = "email"

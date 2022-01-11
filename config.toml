@@ -1,146 +1,170 @@
 baseurl = "/"
+title        = "Hovio.us"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 paginate = 5
 
-[markup]
-  defaultMarkdownHandler = 'goldmark'
-  [markup.asciidocExt]
-    backend = 'html5'
-    extensions = []
-    failureLevel = 'fatal'
-    noHeaderOrFooter = true
-    preserveTOC = false
-    safeMode = 'unsafe'
-    sectionNumbers = false
-    trace = false
-    verbose = false
-    workingFolderCurrent = false
-    [markup.asciidocExt.attributes]
-  [markup.blackFriday]
-    angledQuotes = false
-    footnoteAnchorPrefix = ''
-    footnoteReturnLinkContents = ''
-    fractions = true
-    hrefTargetBlank = false
-    latexDashes = true
-    nofollowLinks = false
-    noreferrerLinks = false
-    plainIDAnchors = true
-    skipHTML = false
-    smartDashes = true
-    smartypants = true
-    smartypantsQuotesNBSP = false
-    taskLists = true
-  [markup.goldmark]
-    [markup.goldmark.extensions]
-      definitionList = true
-      footnote = true
-      linkify = true
-      strikethrough = true
-      table = true
-      taskList = true
-      typographer = true
-    [markup.goldmark.parser]
-      autoHeadingID = true
-      autoHeadingIDType = 'github'
-      [markup.goldmark.parser.attribute]
-        block = false
-        title = true
-    [markup.goldmark.renderer]
-      hardWraps = false
-      unsafe = false
-      xhtml = false
-  [markup.highlight]
-    anchorLineNos = false
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = ''
-    lineAnchors = ''
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
-    style = 'monokai'
-    tabWidth = 4
-  [markup.tableOfContents]
-    endLevel = 3
-    ordered = false
-    startLevel = 2
+enableRobotsTXT = false
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[author]
+  name = "Robert Hovious"
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
 
 [params]
-  # dir name of your main content (default is `content/posts`).
-  # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "posts"
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
 
-  # ["orange", "blue", "red", "green", "pink"]
-  themeColor = "orange"
+  # Metadata mostly used in document's head
+  # 
+  description = "Nice theme for homepages and blogs"
+  keywords = ""
+  images = [""]
 
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+  # Home subtitle of the index page.
+  #
+  homeSubtitle = "Hello Friend. Welcome."
 
-  # show selector to switch language
-  showLanguageSelector = false
+  # Set a background for the homepage
+  # backgroundImage = "assets/images/background.jpg"
 
-  # set theme to full screen width
-  fullWidthTheme = false
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  #
+  # gitUrl = ""
 
-  # center theme with default width
-  centerTheme = true
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  #
+  disableReadOtherPosts = false
 
-  # if your resource directory contains an image called `cover.(jpg|png|webp)`,
-  # then the file will be used as a cover automatically.
-  # With this option you don't have to put the `cover` param in a front-matter.
-  autoCover = true
+  # Enable theme toggle
+  # 
+  # This options enables the theme toggle for the theme. 
+  # Per default, this option is off. 
+  # The theme is respecting the prefers-color-scheme of the operating systeme. 
+  # With this option on, the page user is able to set the scheme he wants. 
+  enableThemeToggle = false
 
-  # set post to show the last updated
-  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
-  showLastUpdated = false
+  # Sharing buttons
+  #
+  # There are a lot of buttons preconfigured. If you want to change them,
+  # generate the buttons here: https://sharingbuttons.io
+  # and add them into your own `layouts/partials/sharing-buttons.html`
+  #
+  enableSharingButtons = true
 
-  # set a custom favicon (default is a `themeColor` square)
-  # favicon = "favicon.ico"
+  # Global language menu
+  #
+  # Enables the global language menu.
+  #
+  enableGlobalLanguageMenu = false
 
-  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
-  # updatedDatePrefix = "Updated"
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  #
+  customCSS = []
+  customJS  = []
 
-  # set all headings to their default size (depending on browser settings)
-  # it's set to `true` by default
-  # oneHeadingSize = false
+  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
+  #
+  justifyContent = false  # Set "text-align: justify" to .post-content.
 
+  # Custom footer 
+  # If you want, you can easily override the default footer with your own content. 
+  #
+  [params.footer]
+    trademark = true
+    rss = true
+    copyright = true
+    author = true
 
-[params.twitter]
-  # set Twitter handles for Twitter cards
-  # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
-  # do not include @
-  creator = ""
-  site = ""
+    topText = []
+    bottomText = [
+      "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
+      "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
+    ]
+
+  # Colors for favicons
+  #
+  [params.favicon.color]
+    mask = "#1b1c1d"
+    msapplication = "#1b1c1d"
+    theme = "#1b1c1d"
+
+  [params.logo]
+    logoMark     = ">"
+    logoText     = "$ cd /home/"
+    logoHomeLink = "/"
+    # Set true to remove the logo cursor entirely.
+    # logoCursorDisabled = false
+    # Set to a valid CSS color to change the cursor in the logo.
+    # logoCursorColor    = "#67a2c9"
+    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+    # logoCursorAnimate  = "2s"
+
+  # Commento is more than just a comments widget you can embed — 
+  # it’s a return to the roots of the internet. 
+  # An internet without the tracking and invasions of privacy. 
+  # An internet that is simple and lightweight. 
+  # An internet that is focused on interesting discussions, not ads. 
+  # A better internet.
+  # Uncomment this to enable Commento.
+  #
+  # [params.commento]
+  #   url = ""
+
+  # Uncomment this if you want a portrait on your start page
+  #
+  # [params.portrait]
+  #   path     = "/img/image.jpg"
+  #   alt      = "Portrait"
+  #   maxWidth = "50px"
+
+  # Social icons
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:nobody@example.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/rhovious"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/"
+
+  [[params.social]]
+    name = "stackoverflow"
+    url  = "https://www.stackoverflow.com/"
 
 [languages]
   [languages.en]
-    languageName = "English"
-    title = "Terminal"
-    subtitle = "A simple, retro theme for Hugo"
-    owner = ""
-    keywords = ""
-    copyright = ""
-    menuMore = "Show more"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
-    newerPosts = "Newer posts"
-    olderPosts = "Older posts"
-    missingContentMessage = "Page not found..."
-    missingBackButtonLabel = "Back to home page"
+    subtitle  = "Hello Friend NG Theme, hello"
+    weight    = 1
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
-    [languages.en.params.logo]
-      logoText = "Terminal"
-      logoHomeLink = "/"
 
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
-      [[languages.en.menu.main]]
-        identifier = "projects"
-        name = "Projects"
-        url = "/project"
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/project"

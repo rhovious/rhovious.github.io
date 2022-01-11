@@ -2,31 +2,21 @@
     <ul class="menu__inner">
         {{- $currentPage := . -}}
         {{ range .Site.Menus.main -}}
-                        {{ if .HasChildren }}
-            <div class="submenu">
-                <li class="dropdown">
-                    <a href="{{ .URL | relLangURL }}" class="dropbtn">{{ .Name }}</a>
-                    <div class="dropdown-content">
-                        
-                        {{ range .Children }}
-                            <a title="{{ .Name }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+            {{ if .HasChildren }}
+                <div class="submenu">
+                    <li class="dropdown">
+                        <a href="{{ .URL | relLangURL }}" class="dropbtn">{{ .Name }}</a>
+                        <div class="dropdown-content">
+                            {{ range .Children }}
+                                <a title="{{ .Name }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
                             {{ end }}
-
-                    </div>
-                </li>
-            </div>
-
-          {{ end }}
-
+                        </div>
+                    </li>
+                </div>
+            {{ end }}
             {{ if not .HasChildren }}
-            <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
-
-          {{ end }}
-
-
-
-
-
+                <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+            {{ end }}
         {{- end }}
 
         {{- if  .Site.Params.EnableGlobalLanguageMenu }}

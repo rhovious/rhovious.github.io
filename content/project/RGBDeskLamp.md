@@ -22,40 +22,30 @@ type =  "projects"
 +++
 
 # Desktop RGB Lamp
-## Building a simple project that will allow moving of a 180* servo via a potentometer and 1306 screen.
+## Modification of a retro desk lamp to be run from Neopixels. 
 
 ## About
-This project 
+Modification of a retro desk lamp to be run from Neopixels. 
 
 ### Hardware Required
 * Arduino Board
   * Any arduino should work, using a Nano clone
-* Servo Motor
-* 0.96 OLED
-  * Used to show the current servo arm angle. Can be ommited and monitored using the serial monitor. I used an 0.96 SSD1306 display 64x128.
-* 10k Potentometer
-  * Used for adjusting the angle of the servo
+* (3) 10k Potentometer
+  * Used for adjusting R, G, and B values of the Neopixels.
 * hook-up wires
 
 ### Circuit
 
    Pin | Description
 --------|------
-    25 | SDA --> OLED
-    26 | SCL --> OLED
-    A0 | Potentometer --> OLED
-    9  |   Servo Pin
+    A0 | Potentometer --> RED
+    A0 | Potentometer --> GREEN
+    A0 | Potentometer --> BLUE
+    A0 | Neopixel Data Pin
 
 ## Assembly
 * INSERT PIC OF BOARD WITHOUT MODULES IN IT
 * *OTHER PICS
-
-
-### Potentometer Circuit
-Wire the potentiometer so that its two outer pins are connected to power (+5V) and ground, and its middle pin is connected to A0 on the board.
-
-### Display Circuit
-Wire the display as required. It should have a connection to power (+5v) and ground. The other 2 pins should ne connected to SDA / SCL on the Nano.
 
 ### Servo Circuit
 Connection to the servo should go through your input pins directly to allow for a higher voltage. Connect servo power (+xxv) and ground to input power supply. The other pin should be connected to your servo control pin on the board 

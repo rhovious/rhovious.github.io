@@ -157,7 +157,10 @@ disableHugoGeneratorInject = false
     subtitle  = "Hello Friend."
     weight    = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-
+  [languages.sp]
+    subtitle  = "Hello Friend."
+    weight    = 1
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
 [menu]
   [[menu.main]]
@@ -172,3 +175,9 @@ disableHugoGeneratorInject = false
     identifier = "posts"
     name = "Posts"
     url = "/posts"
+
+  [[menu.main]]
+    parent = "projects"
+    identifier = "legacy"
+    name = "Legacy"
+    url = "/project/legacy"

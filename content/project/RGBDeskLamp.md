@@ -3,7 +3,7 @@ author =  "Robert Hovious"
 
 title =  "Desktop RGB Lamp"
 description =  "Potentometer RGB controlled desk lamp using neopixels"
-link =  "https://rhovious.github.io/project2/"
+link =  "https://github.com/rhovious/RGBDeskLamp"
 tags =  [
     "servo",
     "arduino",
@@ -20,6 +20,8 @@ draft =  true
 type =  "projects"
 
 +++
+
+[View Code on Github]({{< param link >}} {{< param title >}})
 
 # Desktop RGB Lamp
 ## Modification of a retro desk lamp to be run from Neopixels. 

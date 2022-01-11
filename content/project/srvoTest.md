@@ -3,7 +3,7 @@ author = "Robert Hovious"
 
 title = "Servo Testing/Control Board"
 description = "Servo Positional Control Using Pot and Display"
-link = "https://rhovious.github.io/project1/"
+link = "https://github.com/rhovious/servoTester"
 tags = [
     "servo",
     "arduino",

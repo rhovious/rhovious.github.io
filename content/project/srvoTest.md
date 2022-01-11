@@ -21,6 +21,8 @@ type = "projects"
 
 +++
 
+[View Code on Github]({{< param link >}} {{< param title >}})
+
 Building a simple board that will allow moving of a 180* servo via a potentometer and 1306 screen.
 
 ## About

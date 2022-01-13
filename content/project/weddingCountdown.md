@@ -15,7 +15,7 @@ categories =  [
 
 date =  2021-12-05
 weight =  5
-draft =  true
+draft =  false
 type =  "projects"
 
 +++

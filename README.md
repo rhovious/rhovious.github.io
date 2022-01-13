@@ -23,4 +23,6 @@ $ git submodule add https://github.com/rhazdon/hugo-theme-hello-friend-ng.git th
 
 $ git submodule add -f https://github.com/panr/hugo-theme-terminal.git themes/terminal
 
+$ git submodule add https://github.com/schnerring/hugo-theme-gruvbox.git themes/gruvbox
+
 ```

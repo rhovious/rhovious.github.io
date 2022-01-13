@@ -1,7 +1,7 @@
 baseurl = "/"
 title        = "Hovio.us"
 languageCode = "en-us"
-theme = "hello-friend-ng"
+theme = "gruvbox"
 paginate = 5
 
 enableRobotsTXT = false

@@ -26,9 +26,11 @@ type = "projects"
 Building a simple board that will allow moving of a 180* servo via a potentometer and 1306 screen.
 
 ## About
+
 This project serves the purpose of building a small servo control device. This device allows connection of a standard 180* rotation servo. The angle of the servois adjusted using the potentometer. The active angle of the servo is displayed on the connected screen
 
 ### Hardware Required
+
 * Arduino Board
   * Any arduino should work, using a Nano clone
 * Servo Motor

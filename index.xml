@@ -8,4 +8,6 @@ Hardware Required Adafruit Magtag Another CircuitPython board should work, but w
 Header 2 TEXT
 TEXT
 Header 3 Nulla libero turpis, lacinia vitae cursus ut, auctor dictum nisl. Fusce varius felis nec sem ullamcorper, at convallis nisi vestibulum. Duis risus odio, porta sit amet placerat mollis, tincidunt non mauris. Suspendisse fringilla, odio a dignissim pharetra, est urna sollicitudin urna, eu scelerisque magna ex vitae tellus.
-/* PostCSS code */ pre { background: #1a1a1d; padding: 20px; border-radius: 8px; font-size: 1rem; overflow: auto; @media (--phone) { white-space: pre-wrap; word-wrap: break-word; } code { background: none !</description></item></channel></rss>
+/* PostCSS code */ pre { background: #1a1a1d; padding: 20px; border-radius: 8px; font-size: 1rem; overflow: auto; @media (--phone) { white-space: pre-wrap; word-wrap: break-word; } code { background: none !</description></item><item><title>Tools</title><link>/tools/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/tools/</guid><description>A collection of random tools
+u8g2 Simulator u8g2-Simulator
+Simulates an OLED touchscreen using the u8g2 library</description></item></channel></rss>
